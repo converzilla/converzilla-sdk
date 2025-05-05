@@ -1,0 +1,24 @@
+{
+  "name": "converzilla-sdk",
+  "version": "1.0.0",
+  "description": "Converzilla SDK for web integration",
+  "main": "dist/index.js",
+  "browser": "dist/converzilla.min.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build:esm": "npx tsc",
+    "build:cdn": "esbuild dist/index.js --bundle --minify --outfile=dist/converzilla.min.js --global-name=ConverzillaSDK",
+    "build": "npm run build:esm && npm run build:cdn"
+  },
+  "keywords": [
+    "converzilla",
+    "sdk",
+    "web"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.25.3",
+    "typescript": "^5.8.3"
+  }
+}
