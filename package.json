@@ -1,6 +1,6 @@
 {
   "name": "converzilla-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converzilla SDK for web integration",
   "main": "dist/index.js",
   "browser": "dist/converzilla.min.js",
